@@ -52,3 +52,29 @@ The Badminton Player Management System was designed with a strong focus on gende
 - Badminton is a sport that has traditionally had separate competitions for male and female players, but efforts to promote gender equality are increasingly evident. The system highlights this by acknowledging the importance of both male and female participation, while also making space for non-binary players.
 
 # v. Instructions for running the program
+## Main Page
+
+![main menu](https://github.com/user-attachments/assets/6410d6b7-9b4e-4927-8ab7-52ddbf9392f4)
+
+## Add Player
+
+- You will be prompted to enter details like:
+- Name, age, rank, country, and gender.
+- You will also choose whether the player is a Singles or Doubles player, and enter additional relevant information (e.g., playing style or partner name).
+
+![add player](https://github.com/user-attachments/assets/7b7f868d-d065-462e-bef2-7406b8e8d238)
+
+## View Player
+
+- his option displays a list of all players in the system with their details, including ID, name, age, rank, country, gender, and player type (Singles or Doubles).
+  
+![view player](https://github.com/user-attachments/assets/fbafa715-49dc-46c7-95f3-e03b8245dbc7)
+
+## Show Gender Stats
+
+- This option shows a summary of gender statistics, counting how many players belong to each gender category (Male, Female, Other).
+
+![gender stats](https://github.com/user-attachments/assets/8be21a14-227f-4c72-8680-afcc008dc217)
+
+## Exit
+- Exit the program.
