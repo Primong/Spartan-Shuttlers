@@ -45,3 +45,10 @@ Badminton Player Management System is a console-based Java application designed 
 - **BadmintonDoublesPlayer** displays the name of the player's partner.
 
 # lV. Chosen SDG Gender Equality (SDG 5)
+The Badminton Player Management System was designed with a strong focus on gender equality as its core principle. The project aligns with SDG 5 by addressing gender inclusion and representation in the sport of badminton, helping to ensure that all genders—whether male, female, or non-binary—are equally recognized and treated with respect in the system.
+
+- A **gender statistics feature** is built into the system, which counts the number of male, female, and non-binary players. This feature allows users to monitor the gender balance among players, providing valuable data that can highlight any disparities in gender representation.
+- The system gives equal treatment to both male and female players as well as non-binary players. Every player, regardless of gender, can be added to the system, viewed in the player list, and tracked for gender statistics.
+- Badminton is a sport that has traditionally had separate competitions for male and female players, but efforts to promote gender equality are increasingly evident. The system highlights this by acknowledging the importance of both male and female participation, while also making space for non-binary players.
+
+# v. Instructions for running the program
