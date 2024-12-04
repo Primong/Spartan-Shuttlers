@@ -15,34 +15,50 @@ Badminton Player Management System allows the user to manage players, including 
 5. [Instructions for running the program](#instructions-for-running-the-program)
 
 # l. Project Overview
-Badminton Player Management System is a console-based Java application designed to help manage and track players in the sport of badminton. The system allows users to register new players, view player information, and analyze gender statistics. It implements several key features to ensure efficient player data management while promoting inclusivity and gender equality, making it a useful tool for managing badminton players in both professional and recreational contexts.
+The Badminton Player Management System is a console-based application developed in Java. Its primary purpose is to manage and maintain a list of badminton players, including their personal details, performance statistics, and player type (Singles or Doubles). It also provides administrative functionalities such as adding new players, updating player match statistics, and viewing detailed player information. The system supports user login and session management with basic authentication.
 
 # ll. Features
 - Add a Player
 - View all Player
+- Update Players Stats
+- Search Players
+- Show Top Players by Rank
 - Show Gender Stats
 
 # lll. Explanation of how OOP principles were applied
 
 ## Encapsulation
-1.1. **Encapsulation** refers to the bundling of data (attributes) and methods (functions) that operate on that data into a single unit, or class. It also restricts direct access to some of an object's components, which is typically achieved through access modifiers (e.g., private, public).
+Encapsulation involves bundling data (attributes) and methods (functions) that manipulate the data into a single unit, or class. It also involves restricting direct access to some of an object's components to prevent unintended interference and misuse.
 
-1.2. The **Player class** encapsulates player attributes such as name, age, rank, country, and gender, as well as the logic to manage these attributes.
+**Application in the System:**
+
+- **Private attributes:** In the Player class, attributes like name, age, rank, country, and gender are defined as private. This prevents external classes from directly accessing and modifying these values. This ensures that the state of the player object can only be modified in a controlled manner.
+- **Getter methods:** The class provides getter methods (like getName(), getAge(), getRank()) to access private fields. This way, the player details are encapsulated and cannot be modified directly from outside the class.
 
 ## Inheritance
-2.1. **Inheritance** allows one class to inherit the attributes and methods of another class, enabling code reusability and the creation of hierarchical relationships between classes.
+Inheritance is a mechanism that allows one class to inherit the properties and methods of another. It promotes code reuse and establishes a natural hierarchy between classes.
 
-2.2. The Player class is abstract, and two subclasses—BadmintonSinglesPlayer and BadmintonDoublesPlayer—inherit from it. Both subclasses inherit the Player class's fields (name, age, rank, etc.) and methods, such as getPlayerId(), getName(), getRank(), and getGender().
+**Application in the System:**
+
+- **Player subclasses:** The BadmintonSinglesPlayer and BadmintonDoublesPlayer classes inherit from the abstract Player class. These subclasses inherit common attributes and methods from Player (such as name, rank, getName(), getPlayerId()) but also extend the Player class to include specific attributes relevant to their type (e.g., playingStyle for singles players and partnerName for doubles players).
+- This allows for code reuse: both singles and doubles players share core functionality (e.g., tracking match statistics), and only the specific details unique to each player type are added in the subclasses.
 
 ## Abstraction
-3.1. **Abstraction** involves hiding the complex implementation details and exposing only the necessary parts of the object to the user.
+Abstraction is the principle of hiding the complex implementation details and exposing only the essential features of an object. It allows focusing on "what" an object does, rather than "how" it does it.
+
+**Application in the System:**
+
+- **Abstract Player class:** The Player class is abstract and contains common functionality shared by all player types (e.g., updateMatchStats(), getPlayerId(), getName(), etc.). This class defines the core attributes and methods that all player types should have, but the specifics (such as how player information is displayed) are left for subclasses to define.
+- **Abstract method displayInfo():** The displayInfo() method is declared abstract in the Player class, leaving it up to the subclasses (like BadmintonSinglesPlayer and BadmintonDoublesPlayer) to implement it in a way that fits their specific requirements.
+- This design hides unnecessary implementation details from the user and allows a clean, high-level interaction with player objects, focusing on functionality rather than internal workings.
 
 ## Polymorphism
-4.1. **Polymorphism** allows objects of different classes to be treated as objects of a common superclass. It also enables method overriding, where a subclass can provide its specific implementation of a method.
+Polymorphism is the ability of different classes to respond to the same method call in different ways. This can happen through method overriding (runtime polymorphism) or method overloading (compile-time polymorphism).
 
-4.2. **Method overriding** is demonstrated with the displayInfo() method. Both BadmintonSinglesPlayer and BadmintonDoublesPlayer override the displayInfo() method defined in the Player class to provide specific implementations.
-- **BadmintonSinglesPlayer** displays the player's style (e.g., "Offensive" or "Defensive").
-- **BadmintonDoublesPlayer** displays the name of the player's partner.
+**Application in the System:**
+
+- **Method Overriding (Runtime Polymorphism):** The BadmintonSinglesPlayer and BadmintonDoublesPlayer classes override the displayInfo() method from the Player class. This means that, although the system can treat both player types as Player objects, when the displayInfo() method is called, it will invoke the correct version based on the actual object type (either BadmintonSinglesPlayer or BadmintonDoublesPlayer).
+- This allows the same method to have different behaviors depending on the object it is called on, providing flexibility and making the system easier to extend with new player types.
 
 # lV. Chosen SDG Gender Equality (SDG 5)
 The Badminton Player Management System was designed with a strong focus on gender equality as its core principle. The project aligns with SDG 5 by addressing gender inclusion and representation in the sport of badminton, helping to ensure that all genders—whether male, female, or non-binary—are equally recognized and treated with respect in the system.
