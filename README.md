@@ -68,29 +68,41 @@ The Badminton Player Management System was designed with a strong focus on gende
 - Badminton is a sport that has traditionally had separate competitions for male and female players, but efforts to promote gender equality are increasingly evident. The system highlights this by acknowledging the importance of both male and female participation, while also making space for non-binary players.
 
 # v. Instructions for running the program
-## Main Page
+## Log in
 
-![main menu](https://github.com/user-attachments/assets/6410d6b7-9b4e-4927-8ab7-52ddbf9392f4)
+![login java](https://github.com/user-attachments/assets/0484331b-5afd-4db2-b61f-3488589c7afe)
 
 ## Add Player
+Add a new player (either singles or doubles).
 
-- You will be prompted to enter details like:
-- Name, age, rank, country, and gender.
-- You will also choose whether the player is a Singles or Doubles player, and enter additional relevant information (e.g., playing style or partner name).
+![add player java](https://github.com/user-attachments/assets/ed62c967-b597-434f-b060-5e33df00a5be)
 
-![add player](https://github.com/user-attachments/assets/7b7f868d-d065-462e-bef2-7406b8e8d238)
+![add player 2 java](https://github.com/user-attachments/assets/7c636273-e59e-482b-af6b-fbe5232cd353)
+
 
 ## View Player
+View a list of all players in the system
 
-- his option displays a list of all players in the system with their details, including ID, name, age, rank, country, gender, and player type (Singles or Doubles).
-  
-![view player](https://github.com/user-attachments/assets/fbafa715-49dc-46c7-95f3-e03b8245dbc7)
+![view player java](https://github.com/user-attachments/assets/a13557af-534d-47a7-9934-d5f476319872)
+
+## Update Player Stats
+Update the match stats (wins or losses) of a player.
+
+![update match java](https://github.com/user-attachments/assets/659e2fa6-5215-4ae7-9bb6-272cfc4b8b5d)
+
+## Search Player 
+Search for a player by name.
+
+![search player java](https://github.com/user-attachments/assets/dd07268a-a796-46fe-adef-fbbf2d160902)
+
+## Show Top Players by Rank
+
+![top players java](https://github.com/user-attachments/assets/77113538-9aa3-4c76-8e0a-b70573d53c63)
 
 ## Show Gender Stats
+Display the top 5 players by rank.
 
-- This option shows a summary of gender statistics, counting how many players belong to each gender category (Male, Female, Other).
-
-![gender stats](https://github.com/user-attachments/assets/8be21a14-227f-4c72-8680-afcc008dc217)
+![Gnder stats java](https://github.com/user-attachments/assets/d4fc9881-750c-473e-84c0-6c0f238c7a12)
 
 ## Exit
 - Exit the program.
